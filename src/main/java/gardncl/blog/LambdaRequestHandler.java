@@ -18,6 +18,6 @@ public class LambdaRequestHandler implements RequestHandler<Map<String,Object>, 
         JsonObject parsedObject = PercentEncodingParseService.percentEncodingToJson(rawInput);
 
         //RETURN NEWLY CREATE JSON OBJECT
-        return parsedObject.getAsString();
+        return parsedObject.toString();
     }
 }
